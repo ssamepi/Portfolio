@@ -5,8 +5,8 @@
 <template>
 
     <section id="contact" class="contact">
-      <h2>Contact</h2>
-      <p>Email : <a href="mailto:sen-sam.sam@epitech.eu">sen-sam.sam@epitech.eu</a></p>
+      <h2>Contact par mail directement</h2>
+      <a href="mailto:sen-sam.sam@epitech.eu">sen-sam.sam@epitech.eu</a>
     </section>
 
 </template>

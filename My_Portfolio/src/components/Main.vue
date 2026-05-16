@@ -1,8 +1,8 @@
 <script>
 import Carroussel from '@/components/Carroussel.vue'
-
+import Email from '@/components/Email.vue'
 export default {
-    components: {Carroussel},
+    components: {Carroussel, Email},
     props: ['techno']
     }
 </script>
@@ -20,6 +20,7 @@ export default {
             </div>
         </div>
     </section>
+    <Email/>
 </template>
 
 <style scoped>

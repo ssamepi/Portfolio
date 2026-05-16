@@ -5,17 +5,11 @@
 </script>
 <template>
     <div class="grid">
-        <a v-for="project in projects" :key="project.title" :href="project.link" target="_blank" class="card_project">
+        <router-link v-for="project in projects" :key="project.title" :to="project.slug" class="card_project">
             <img :src="project.image" :alt="project.title" class="project_image" />
             <h3>{{ project.title }}</h3>
             <p>{{ project.description }}</p>
-        </a>
-        <div class="card_project">
-            <h3>Mini-jeux personnel</h3>
-            <p>Projet personnel de mini-jeux.</p>
-            <!-- 
-          { title: "Jeu du pendu", description: "Mini jeu de rentrée"}, -->
-      </div>
+        </router-link>
     </div>
 </template>
 

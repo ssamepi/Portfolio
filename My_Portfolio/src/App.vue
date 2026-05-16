@@ -1,11 +1,9 @@
 <script>
 import Header from '@/components/Header.vue'
-import Email from '@/components/Email.vue'
 
 export default {
   components: {
-    Header,
-    Email
+    Header
   }
 }
 </script>
@@ -14,7 +12,6 @@ export default {
   <div>
     <Header />
     <router-view />
-    <Email />
   </div>
 </template>
 

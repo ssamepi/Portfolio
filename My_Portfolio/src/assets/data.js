@@ -14,17 +14,20 @@ import NextBuy from "@/assets/images_projects/Next_buy.png"
 import SNCF from "@/assets/images_projects/SNCF.png"
 import Alice from "@/assets/images_projects/Alice_in_wonderland.png"
 import Explore from "@/assets/images_projects/Explore&Capture.png"
+import Chat_TPG from "@/assets/images_projects/Chat_TPG.png"
+import Mini_games from "@/assets/images_projects/Mini_games.png"
 
 export const projects = [
-  { title: "Starter digital resume", description: "Apprentissage HTML, Css", image: DigitalResume },
-  { title: "Etodo Planning", description: "Planning de gestion de tâches", image: Etodo },
-  { title: "Hack&Juice", description: "Initiation cyber-sécurité", image: HackJuice },
-  { title: "Hackathon Green_way", description: "Réseau social spécifique", image: GreenWay },
-  { title: "UX&UI Explore & capture", description: "Application de photographie", image: Explore },
-  { title: "Portfolio", description: "Site personnel", image: "" },
-  { title: "Next Buy", description: "Prédiction d'un futur achat client", image: NextBuy },
-  { title: "SNCF", description: "Prédiction d'un retard de train", image: SNCF },
-  { title: "Alice in Wonderland", description: "Prédiction et résumé d'un livre", image: Alice }
+  { slug: "starter-digital-resume" , title: "Starter digital resume", description: "Apprentissage HTML, Css", image: DigitalResume },
+  { slug: "etodo-planning", title: "Etodo Planning", description: "Planning de gestion de tâches", image: Etodo },
+  { slug: "hack-and-juice" , title: "Hack&Juice", description: "Initiation cyber-sécurité", image: HackJuice },
+  { slug: "green-way" , title: "Hackathon Green_way", description: "Réseau social spécifique", image: GreenWay },
+  { slug: "explore-and-capture" , title: "UX&UI Explore & capture", description: "Application de photographie", image: Explore },
+  { slug: "next-buy" , title: "Next Buy", description: "Prédiction d'un futur achat client", image: NextBuy },
+  { slug: "sncf" , title: "SNCF", description: "Prédiction d'un retard de train", image: SNCF },
+  { slug: "alice-in-wonderland" , title: "Alice in Wonderland", description: "Prédiction et résumé d'un livre", image: Alice },
+  { slug: "eliza" , title: "Eliza", description: "Chatbot assistant de voyage", image: Chat_TPG},
+  { slug: "mini-jeux" , title: "Mini-jeux", description: "Petits projets personnel", image: Mini_games}
 ]
 
 export const techno = [

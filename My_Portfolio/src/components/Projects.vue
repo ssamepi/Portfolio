@@ -1,8 +1,9 @@
 <script>
 import Carroussel from '@/components/Carroussel.vue'
+import Email from '@/components/Email.vue'
 
 export default {
-    components: {Carroussel},
+    components: {Carroussel, Email},
     props: ['projects']
     }
 </script>
@@ -11,4 +12,5 @@ export default {
         <h2>Mes Projets</h2>
         <Carroussel :projects="projects"/>
     </section>
+    <Email/>
 </template>
