@@ -1,26 +1,24 @@
 <script>
-import Email from '@/components/Email.vue'
+import Email from "@/components/Email.vue";
 export default {
-    components: {Email}
-    }
+  components: { Email },
+};
 </script>
 
 <template>
   <section class="contact">
     <h2>Contactez-moi</h2>
     <form action="https://formspree.io/f/xqenqryw" method="POST" class="form">
-      <input 
-        type="email" 
+      <input
+        type="email"
         name="email"
         placeholder="Email pour vous recontacter"
         required
       />
-      <textarea 
-        name="message"
-        placeholder="Votre message"
-      ></textarea>
+      <textarea name="message" placeholder="Votre message"></textarea>
       <button type="submit">Envoyer</button>
     </form>
+    <a href="/CV_Sen-Sam_SAM.pdf" download="CV M.SAM Sen-Sam.pdf">Téléchargez mon cv</a>
     <Email />
   </section>
 </template>
@@ -47,7 +45,8 @@ export default {
   gap: 20px;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 12px;
   border-radius: 8px;
@@ -55,7 +54,6 @@ input, textarea {
   background: #1e293b;
   color: white;
   font-size: 1rem;
-  outline: none;
   transition: 0.3s;
 }
 
@@ -75,10 +73,19 @@ button {
   transition: 0.3s;
 }
 
-/* HOVER */
 button:hover {
   background: #2563eb;
   transform: translateY(-2px);
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #3b82f6, #178275);
+  color: white;
+  border-radius: 16px;
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {
@@ -90,7 +97,8 @@ button:hover {
     font-size: 1.6rem;
   }
 
-  input, textarea {
+  input,
+  textarea {
     font-size: 0.95rem;
     padding: 10px;
   }

@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Main from '@/components/Main.vue'
 import Projects from '@/components/Projects.vue'
 import Contact from '@/components/Contact.vue'
+import Personnel from '@/components/Personnel.vue'
 
 // Chaque page de projet
 import Mini_games from '@/components/Per_project/Mini_games.vue'
@@ -21,8 +22,13 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: Main, 
+    component: Main,
     props: { projects, techno }
+  },
+  {
+    path: '/personnel',
+    name: 'personnel',
+    component: Personnel
   },
   {
     path: '/projects',
@@ -35,7 +41,7 @@ const routes = [
     name: 'Contact',
     component: Contact,
     props: { projects, techno }
-  }  ,
+  },
   {
     path: '/mini-jeux',
     name: 'Mini_games',
@@ -84,9 +90,9 @@ const routes = [
     component: Eliza
   },
   {
-   path: '/explore-and-capture',
-   name: 'Explore_capture',
-  component: ExploreCapture
+    path: '/explore-and-capture',
+    name: 'Explore_capture',
+    component: ExploreCapture
   }
 ]
 

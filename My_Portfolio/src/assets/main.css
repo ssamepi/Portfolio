@@ -1,12 +1,18 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: url("/background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+
+  background: linear-gradient(
+    135deg,
+    #020617,
+    #111827,
+    #312e81
+  );
+
   color: white;
   text-align: center;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
 a {

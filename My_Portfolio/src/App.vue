@@ -1,11 +1,11 @@
 <script>
-import Header from '@/components/Header.vue'
+import Header from "@/components/Header.vue";
 
 export default {
   components: {
-    Header
-  }
-}
+    Header,
+  },
+};
 </script>
 
 <template>
@@ -15,5 +15,4 @@ export default {
   </div>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

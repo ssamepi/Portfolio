@@ -1,19 +1,26 @@
 <script>
-import Email from '@/components/Email.vue'
+import Email from "@/components/Email.vue";
+import Back from "@/components/Per_project/Used_In_Projects/BackButton.vue";
+
 export default {
-    components: { Email }
-    }
+  components: { Email, Back },
+};
 </script>
 
 <template>
-        <div class="card_project">
-            <h3>Mini-jeux personnel</h3>
-            <p>Projet personnel de mini-jeux.</p>
-            <!-- 
+  <div class="card_project">
+    <h3>Mini-jeux personnel</h3>
+    <p>Projet personnel de mini-jeux.</p>
+    <!-- 
           { title: "Jeu du pendu", description: "Mini jeu de rentrée"}, -->
-      </div>
-      <Email/>
+  </div>
+  <Back/>
+  <Email />
 </template>
 
 <style scoped>
-</style>
+
+.card_project{
+  margin-bottom: 20px;
+}
+  </style>

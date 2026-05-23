@@ -18,7 +18,7 @@ import Chat_TPG from "@/assets/images_projects/Chat_TPG.png"
 import Mini_games from "@/assets/images_projects/Mini_games.png"
 
 export const projects = [
-  { slug: "starter-digital-resume" , title: "Starter digital resume", description: "Apprentissage HTML, Css", image: DigitalResume },
+  { slug: "starter-digital-resume" , title: "Starter digital resume", description: "Apprentissage HTML, CSS", image: DigitalResume },
   { slug: "etodo-planning", title: "Etodo Planning", description: "Planning de gestion de tâches", image: Etodo },
   { slug: "hack-and-juice" , title: "Hack&Juice", description: "Initiation cyber-sécurité", image: HackJuice },
   { slug: "green-way" , title: "Hackathon Green_way", description: "Réseau social spécifique", image: GreenWay },

@@ -1,24 +1,23 @@
 <script>
-import { projects } from '@/assets/data.js'
-import Email from '@/components/Email.vue'
+import { projects } from "@/assets/data.js";
+import Email from "@/components/Email.vue";
+import Back from "@/components/Per_project/Used_In_Projects/BackButton.vue";
 
 export default {
-    components: { Email },
-    data() {
-        return {
-            project: projects.find(p => p.slug === 'etodo-planning')
-        }
-    }
-}
+  components: { Email, Back },
+  data() {
+    return {
+      project: projects.find((p) => p.slug === "etodo-planning"),
+    };
+  },
+};
 </script>
 
 <template>
   <div v-if="project">
-
     <h1 class="title">{{ project.title }}</h1>
 
     <div class="content">
-
       <img :src="project.image" :alt="project.title" />
 
       <div class="text">
@@ -27,56 +26,58 @@ export default {
         <p>Il y avait plusieurs objectifs à ce projet :</p>
 
         <ul>
-          <li>Récupérer des livres depuis une bibliothèque en ligne</li>
-          <li>Nettoyer les parties inutiles</li>
-          <li>Effectuer des calculs (richesse lexicale, etc.)</li>
-          <li>Proposer des livres personnalisés</li>
+          <li>Avoir un système d'enregistrement et de connexion</li>
+          <li>Faire un site internet qui permet la création de cartes</li>
+          <li>Suivi d'une tâche simple et clair</li>
+          <li>Possibilités de changer l'état des cartes (en cours -> fait)</li>
         </ul>
       </div>
-
     </div>
-
+    <Back/>
     <Email />
   </div>
 </template>
 
 <style scoped>
-    .title {
-    text-align: center;
-    margin-bottom: 2rem;
-    }
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
 
-    .content {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    align-items: flex-start;
-    }
+.content {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
 
-    img {
-    width: 20rem;
-    height: auto;
-    object-fit: contain;
-    }
+img {
+  border-radius: 8px;
+  width: 20rem;
+  height: auto;
+  object-fit: contain;
+}
 
-    .text {
-    display: flex;
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  text-align: left;
+  padding-left: 1rem;
+}
+
+@media (max-width: 768px) {
+  .content {
     flex-direction: column;
-    }
+    align-items: center;
+    text-align: center;
+  }
 
-    ul {
-    padding-left: 1rem;
-    }
-
-    @media (max-width: 768px) {
-    .content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    ul {
-        list-style-position: inside;
-    }
-    }
+  ul {
+    list-style-position: inside;
+  }
+}
 </style>
