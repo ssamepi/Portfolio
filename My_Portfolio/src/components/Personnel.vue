@@ -102,11 +102,14 @@ import Email from "@/components/Email.vue"
       </p>
     </section>
     <Email/>
+    <div class="cube cube-right"></div>
+    <div class="cube cube-left"></div>
   </div>
 </template>
 
 <style scoped>
 .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -145,5 +148,25 @@ h2 {
   border-radius: 16px;
   object-fit: cover;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+.cube {
+  position: absolute;
+  width: clamp(0.5rem, 4vw, 1rem);
+  height: clamp(0.5rem, 4vw, 1rem);
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  border-radius: 6px;
+  animation: bounce 10s ease-in-out infinite;
+  z-index: -1;
+  pointer-events: none;
+}
+.cube-right{
+  right: 2vw;
+}
+.cub-left{
+  left: 2vw;
+}
+@keyframes bounce {
+  0%   { top: -5vh; }
+  100% { top: calc(100% - clamp(0.5rem, 4vw, 1rem)); }
 }
 </style>
