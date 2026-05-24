@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-  <section class="contact">
+  <section>
     <h2>Contactez-moi</h2>
     <form action="https://formspree.io/f/xqenqryw" method="POST" class="form">
       <input
@@ -24,15 +24,7 @@ export default {
 </template>
 
 <style scoped>
-.contact {
-  padding: 60px 20px;
-  text-align: center;
-  background: #0f172a;
-  color: white;
-}
-
 .contact h2 {
-  margin-bottom: 30px;
   font-size: 2rem;
 }
 
@@ -54,7 +46,6 @@ textarea {
   background: #1e293b;
   color: white;
   font-size: 1rem;
-  transition: 0.3s;
 }
 
 textarea {

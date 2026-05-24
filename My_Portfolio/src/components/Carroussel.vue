@@ -23,6 +23,7 @@ export default {
 <style scoped>
 .div-carousel {
   width: 100%;
+  overflow: hidden;
 }
 
 .carousel {
