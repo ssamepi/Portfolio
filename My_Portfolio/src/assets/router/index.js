@@ -5,7 +5,6 @@ import Contact from '@/components/Contact.vue'
 import Personnel from '@/components/Personnel.vue'
 
 // Chaque page de projet
-import Mini_games from '@/components/Per_project/Mini_games.vue'
 import Alice_in_wonderland from '@/components/Per_project/Alice_in_wonderland.vue'
 import Eliza from '@/components/Per_project/Eliza.vue'
 import Etodo_planning from '@/components/Per_project/Etodo_planning.vue'
@@ -41,12 +40,6 @@ const routes = [
     name: 'Contact',
     component: Contact,
     props: { projects, techno }
-  },
-  {
-    path: '/mini-jeux',
-    name: 'Mini_games',
-    component: Mini_games,
-    props: { projects }
   },
   {
     path: '/starter-digital-resume',
