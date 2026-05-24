@@ -28,9 +28,8 @@ export default {
 
 .carousel {
   display: flex;
-  gap: 1rem;
   width: max-content;
-  animation: scroll-to-left 40s linear infinite;
+  animation: scroll-to-left 30s linear infinite;
 }
 
 .carousel:hover {
@@ -54,6 +53,7 @@ export default {
      on donne a la carte 25vw et on met mini 12rem et max 20 rem */
   border-radius: 10px;
   transition: transform 0.3s;
+  margin-right: 1rem;
 }
 
 .card_project:hover {
