@@ -15,7 +15,6 @@ import SNCF from "@/assets/images_projects/SNCF.png"
 import Alice from "@/assets/images_projects/Alice_in_wonderland.png"
 import Explore from "@/assets/images_projects/Explore&Capture.png"
 import Chat_TPG from "@/assets/images_projects/Chat_TPG.png"
-import Mini_games from "@/assets/images_projects/Mini_games.png"
 
 export const projects = [
   { slug: "starter-digital-resume" , title: "Starter digital resume", description: "Apprentissage HTML, CSS", image: DigitalResume },
@@ -26,8 +25,7 @@ export const projects = [
   { slug: "next-buy" , title: "Next Buy", description: "Prédiction d'un futur achat client", image: NextBuy },
   { slug: "sncf" , title: "SNCF", description: "Prédiction d'un retard de train", image: SNCF },
   { slug: "alice-in-wonderland" , title: "Alice in Wonderland", description: "Prédiction et résumé d'un livre", image: Alice },
-  { slug: "eliza" , title: "Eliza", description: "Chatbot assistant de voyage", image: Chat_TPG},
-  { slug: "mini-jeux" , title: "Mini-jeux", description: "Petits projets personnel", image: Mini_games}
+  { slug: "eliza" , title: "Eliza", description: "Chatbot assistant de voyage", image: Chat_TPG}
 ]
 
 export const techno = [
