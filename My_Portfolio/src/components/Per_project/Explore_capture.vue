@@ -59,7 +59,7 @@ export default {
 
 img {
   border-radius: 8px;
-  width: 10rem;
+  width: 9rem;
   height: auto;
   object-fit: contain;
 }
