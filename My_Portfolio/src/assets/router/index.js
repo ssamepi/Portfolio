@@ -19,71 +19,71 @@ import { projects, techno } from '@/assets/data.js'
 
 const routes = [
   {
-    path: '/Portfolio',
+    path: '/',
     name: 'home',
     component: Main,
     props: { projects, techno }
   },
   {
-    path: '/Portfolio/personnel',
+    path: '/personnel',
     name: 'personnel',
     component: Personnel
   },
   {
-    path: '/Portfolio/projects',
+    path: '/projects',
     name: 'Projects',
     component: Projects,
     props: { projects, techno }
   },
   {
-    path: '/Portfolio/contact',
+    path: '/contact',
     name: 'Contact',
     component: Contact,
     props: { projects, techno }
   },
   {
-    path: '/Portfolio/starter-digital-resume',
+    path: '/starter-digital-resume',
     name: 'Starter_digital_resume',
     component: Starter_digital
   },
   {
-    path: '/Portfolio/etodo-planning',
+    path: '/etodo-planning',
     name: 'Etodo_planning',
     component: Etodo_planning
   },
   {
-    path: '/Portfolio/hack-and-juice',
+    path: '/hack-and-juice',
     name: 'Hack_juice',
     component: HackJuice
   },
   {
-    path: '/Portfolio/green-way',
+    path: '/green-way',
     name: 'Hackathon_green_way',
     component: Hackathon_green_way
   },
   {
-    path: '/Portfolio/next-buy',
+    path: '/next-buy',
     name: 'Next_buy',
     component: Next_buy
   },
   {
-    path: '/Portfolio/sncf',
+    path: '/sncf',
     name: 'Sncf',
     component: Sncf
   },
   {
-    path: '/Portfolio/alice-in-wonderland',
+    path: '/alice-in-wonderland',
     name: 'Alice_in_wonderland',
     component: Alice_in_wonderland,
     props: { projects }
   },
   {
-    path: '/Portfolio/eliza',
+    path: '/eliza',
     name: 'Eliza',
     component: Eliza
   },
   {
-    path: '/Portfolio/explore-and-capture',
+    path: '/explore-and-capture',
     name: 'Explore_capture',
     component: ExploreCapture
   }
